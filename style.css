@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #EBEBEB;   
+}
+header{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    padding-left: 30px;
+    padding-right: 30px;
+    align-content: center;
+}
+
+header .logoB #logo_buntu{
+    height: 89px;
+    width: 159px;
+    margin-right: 368px;
+    color: #024A5E;
+}
+header .cartt #cart{
+    width: 35px;
+    height: 37px;
+    margin-top: 25px;
+    margin-left: 20px;
+   
+}
+nav a{
+    text-decoration: none;
+    margin-right: 56px;
+    background-color: #354661;
+    border-radius: 20px;
+    padding: 5px 10px 5px 10px;
+    color: white;
+}
+header nav{
+    align-content: center;
+   
+}
+header .logoB{
+    margin-right: 68px;
+}
+#section1 .welcome_bar{
+    background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url(./assets/p1.webp);
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 10px 15px 10px 15px;
+    align-content: center;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+#section1 .welcome_bar #help{
+    background-color: #6C8FC3;
+    border-radius: 5px;
+    padding: 5px 15px 5px 15px;
+}
+.server{
+    color: #253790;
+    margin: 20px 30px;
+}
+#section1 .services_info{
+    display: flex;
+    margin-left: 30px;
+    margin-right: 30px;
+    justify-content: space-between;
+    background-color: #E5F3FF;
+    padding: 10px 15px 10px 15px;
+}
+.services_info .info{
+    margin-top: 10px;
+}
+.services_info .serv{
+    color: #253790;
+    font-size: xx-large;
+    font-weight: 400;
+    
+}
+
+.services_info #hosting{
+    width: 500px;
+    height: 180px;
+    border-radius: 5px;
+}
+#section1 .offers{
+    background: linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20)), url(./assets/p1.webp);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: inherit;
+    margin-top: 40px;
+}
+.offers h2{
+    margin-bottom: 20px;
+}
+.offers p{
+    margin-bottom: 15px;
+}
+.offers #afford{
+    margin-top: 20px;
+    background-color: #D9D9D9;
+    padding: 5px 20px 5px 20px;
+    border-radius: 20px;
+}
+footer{
+    padding: 30px;
+    background: #354661;
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+}
+
+
