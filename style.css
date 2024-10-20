@@ -37,6 +37,10 @@ nav a{
     padding: 5px 10px 5px 10px;
     color: white;
 }
+nav a:hover{
+    transition: 10s;
+    background-color: gray;
+}
 header nav{
     align-content: center;
    
@@ -134,7 +138,7 @@ footer{
     display: flex;
     margin: 40px;
     width: 1005;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .all_service span{
     background-color: #356480;
