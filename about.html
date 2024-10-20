@@ -108,42 +108,55 @@
                             </div>
                             
                             <div class="form_group">
+                                <label for="name"> </label><br/>
                                 <input type="text" id="surname" placeholder="Last" required><br/>
                             </div>
                         </div>
                         
                         <div class="form_raw">
                             <div class="form_group">
-                                <label for="company">Company Name:</label><br/>
-                                <input type="text" id="company">
+                                <label for="company">Company Name: <span>*</span></label><br/>
+                                <input type="text" id="company" required>
+                            </div>
+
+                            <div class="form_group">
+                                <label for="phone">Phone: <span>*</span></label><br/>
+                                <input type="text" id="phone" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form_raw">
+                            <div class="form_group">
+                                <label for="mail">Email: <span>*</span></label><br/>
+                                <input type="email" id="mail" required>
+                            </div>
+
+                            <div class="form_group">
+                                <label for="country">Country:</label><br/>
+                                <select id="country">
+                                    <option>South Africa</option>
+                                    <option>nigeria</option>
+                                    <option>grmany</option>
+                                </select><br/>
                             </div>
                         </div>
 
+                        <div class="form_raw">
+                            <div class="form_group">
+                                <label for="province">Province</label><br/>
+                                <select id="province">
+                                    <option>Gauteng</option>
+                                    <option>Mpumalanga</option>
+                                    <option>Limpopo</option>
+                                </select><br/>
+                            </div>
+                        </div>
                         
-
-                        <label for="phone">Phone:</label><br/>
-                        <input type="text" id="phone">
-
-                        <label for="mail">Email:</label><br/>
-                        <input type="email" id="mail" required>
-
-                        <label for="country">Country:</label><br/>
-                        <select id="country">
-                            <option>South Africa</option>
-                            <option>nigeria</option>
-                            <option>grmany</option>
-                        </select><br/>
-
-                        <label for="province">Province</label><br/>
-                        <select id="province">
-                            <option>Gauteng</option>
-                            <option>Mpumalanga</option>
-                            <option>Limpopo</option>
-                        </select><br/>
-
-                        <label for="comment">Comment</label><br/>
-                        <textarea id="comment"></textarea><br/>
-
+                        <div class="form_group">
+                            <label for="comment">Comment</label><br/>
+                            <textarea id="comment"></textarea><br/>
+                        </div>
+                        
                         <button type="submit">Submit</button>
                     </form>
     

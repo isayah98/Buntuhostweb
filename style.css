@@ -260,6 +260,43 @@ footer{
     color: #356480;
 }
 form{
-    display: inline-table;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+.form_raw{
+    display: flex;
+    margin-bottom: 20px;
+}
+.form_group{
+    margin-right: 40px;
+}
+label{
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+input, select{
+   border: 2px solid #ccc;
+   border-radius: 20px;
+   padding: 10px;
+   background-color: #ccc;
+}
+.form_group span{
+    color: red;
+}
+textarea{
+    padding: 60px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    background-color: #ccc;
+}
+form button{
+    background-color: #024A5E;
+    color: white;
+    margin-top: 20px;
+    padding: 5px 15px 5px 15px;
+    border-radius: 15px;
+    font-size: large;
+    font-weight: bold;
 }
 
