@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 body{
     background-color: #EBEBEB;   
@@ -71,6 +72,7 @@ header .logoB{
     justify-content: space-between;
     background-color: #E5F3FF;
     padding: 10px 15px 10px 15px;
+    border-radius: 10px;
 }
 .services_info .info{
     margin-top: 10px;
@@ -96,8 +98,8 @@ header .logoB{
     align-items: center;
     text-align: center;
     color: white;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 90px;
     height: inherit;
     margin-top: 40px;
 }
@@ -120,5 +122,88 @@ footer{
     color: white;
     text-align: center;
 }
+#section2 .our_services{
+    background-position: center;
+    text-align: center;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 50px;
+    
+}
+.our_services .all_service{
+    display: flex;
+    margin: 40px;
+    width: 1005;
+    justify-content: space-between;
+}
+.all_service span{
+    background-color: #356480;
+    padding: 20px 30px 20px 30px;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    
+}
+.all_service span h3,h4{
+    margin-bottom: 20px;
+}
 
+.all_service span ul li{
+    margin-bottom: 10px;
+    font-size: small;
+
+}
+.all_service span #carrt{
+    margin-top: 30px;
+    padding: 5px 30px 5px 30px;
+    font-weight: bold;
+}
+.package{
+    margin-left: 30px;
+    margin-top: 50px;
+    margin-right: 30px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    color: #024A5E;
+}
+.package h3{
+    margin-bottom: 20px;
+}
+.package p{
+    padding-left: 20px;
+}
+.package #interested{
+    background-color: #024A5E;
+    font-weight: bold;
+    padding: 5px 15px 5px 15px;
+    border-radius: 15px;
+}
+.media{
+    display: flex;
+    margin-left: 30px;
+}
+.media .all{
+    background: linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20)), url(./assets/p1.webp);
+    width: 80%;
+    margin-right: 80px;
+    padding: 30px;
+    border-radius: 15px;
+    color: white;
+}
+#go_back{
+    background-color: #024A5E;
+    color: white;
+    font-weight: bold;
+    padding: 10px 35px 10px 35px;
+    border-radius: 5px;
+}
+.media_list{
+    display: flex;
+    margin-bottom: 20px;
+}
+.all .media_list a{
+    text-decoration: none;
+    margin-left: 30px;
+}
 
