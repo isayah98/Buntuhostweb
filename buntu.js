@@ -1,7 +1,7 @@
 let currentService = 0;
 const services = document.querySelectorAll('.service');
 const totalServices = services.length;
-const intervalTime = 5000; // Change service every 5 seconds
+const intervalTime = 3000; // Change service every 5 seconds
 
 // Function to show the next service
 function showNextService() {
