@@ -135,7 +135,7 @@ header nav{
 header .logoB{
     margin-right: 68px;
 }
-#section1 .welcome_bar{
+.welcome_bar{
     background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url(./assets/p1.webp);
     margin-left: 30px;
     margin-right: 30px;
@@ -180,15 +180,17 @@ header .logoB{
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
     display: flex;
-    
-    flex-direction: column;
+    padding-bottom: 12px;
     margin: 40px;
+    align-items: center;
 }
 
 .service img{
-    width: 100px; 
-    height: auto;
-    margin-bottom: 15px;
+    width: 300px; 
+    height: 60%;
+    margin: 20px;
+    display: inline;
+    border-radius: 10px;
 }
 .service.active {
     opacity: 1;
@@ -197,7 +199,7 @@ header .logoB{
     margin-top: 10px;
 }
 .services_info .serv{
-    color: #253790;
+    color: white;
     font-size: xx-large;
     font-weight: 400;
     
@@ -262,7 +264,7 @@ footer{
     color: white;
     text-align: center;
 }
-#section2 .our_services{
+.our_services{
     background-position: center;
     text-align: center;
     margin-left: 60px;
