@@ -25,7 +25,9 @@
 				<li><a href="about.html#section2">Contact us</a></li>
 			</ul>
 			
-		</nav>
+		</nav><br/>
+
+		<span class="login"><a href="login.html">Login/SignUp</a></span>
 
 		<a href="cart.html">
 			<img class="cart" src="./assets/cart2.png" alt="cart icon"/>
@@ -106,44 +108,57 @@
 
 
 		<section id="section2">
+			
 			<div class="our_services">
 				<h1>OUR SERVICES</h1>
 				<div class="all_service">
-				<span id="web_hosting">
-					<h3>Website hosting</h3>
-					<h4>Small businesses</h4>
-					<ul>
-						<li>Reliable hosting with 99.9%<br/>Uptime</li>
-						<li>Reliable hosting with 99.9%<br/>Uptime</li>
-						<li>Reliable hosting with 99.9%<br/>Uptime</li>
-						<li>Reliable hosting with 99.9%<br/>Uptime</li>
-					</ul>
-					<button type="button" id="carrt">R349/pm</button>
-				</span>
-
-				<span id="web_development">
-					<h3>Web development</h3>
-					<h4>Small businesses</h4>
-					<ul>
-						<li>Reliable hosting with 99.9%<br/>Uptime</li>
-						<li>Reliable hosting with 99.9%<br/>Uptime</li>
-						<li>Reliable hosting with 99.9%<br/>Uptime</li>
-						<li>Reliable hosting with 99.9%<br/>Uptime</li>
-					</ul>
-					<button type="button" id="carrt">R10000</button>
-				</span>
-
-				<span id="web_design">
-					<h3>Web design</h3>
-					<h4>Small businesses</h4>
-					<ul>
-						<li>Reliable hosting with 99.9%<br/>Uptime</li>
-						<li>Reliable hosting with 99.9%<br/>Uptime</li>
-						<li>Reliable hosting with 99.9%<br/>Uptime</li>
-						<li>Reliable hosting with 99.9%<br/>Uptime</li>
-					</ul>
-					<button type="button" id="carrt">R1500</button>
-				</span>
+					<span id="web_hosting">
+						<button class="arrow left-arrow" onclick="prevTarget('web_hosting')">&lt;</button>
+						<div class="target-info">
+							<h3>Website hosting</h3>
+							<h4 class="target-title">Small businesses</h4>
+							<ul class="target-features">
+								<li>Reliable hosting with 99.9% Uptime</li>
+								<li>Free SSL certificate</li>
+								<li>24/7 customer support</li>
+								<li>Secure data backups</li>
+							</ul>
+							<button type="button" class="price-btn">R349/pm</button>
+						</div>
+						<button class="arrow right-arrow" onclick="nextTarget('web_hosting')">&gt;</button>
+					</span>
+			
+					<span id="web_development">
+						<button class="arrow left-arrow" onclick="prevTarget('web_development')">&lt;</button>
+						<div class="target-info">
+							<h3>Web development</h3>
+							<h4 class="target-title">Small businesses</h4>
+							<ul class="target-features">
+								<li>Custom website development</li>
+								<li>Mobile-friendly design</li>
+								<li>SEO optimization</li>
+								<li>Content management system</li>
+							</ul>
+							<button type="button" class="price-btn">R10000</button>
+						</div>
+						<button class="arrow right-arrow" onclick="nextTarget('web_development')">&gt;</button>
+					</span>
+			
+					<span id="web_design">
+						<button class="arrow left-arrow" onclick="prevTarget('web_design')">&lt;</button>
+						<div class="target-info">
+							<h3>Web design</h3>
+							<h4 class="target-title">Small businesses</h4>
+							<ul class="target-features">
+								<li>Professional web design</li>
+								<li>Responsive layouts</li>
+								<li>UI/UX optimization</li>
+								<li>Graphic design integration</li>
+							</ul>
+							<button type="button" class="price-btn">R1500</button>
+						</div>
+						<button class="arrow right-arrow" onclick="nextTarget('web_design')">&gt;</button>
+					</span>
 				</div>
 			</div>
 
@@ -199,6 +214,8 @@
 			Buntuhost (Pty) Ltd, All rights reserved.
 		</span>
 	</footer>
+
+ 
 	
 </body>
 </html>

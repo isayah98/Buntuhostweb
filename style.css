@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -264,42 +266,68 @@ footer{
     color: white;
     text-align: center;
 }
-.our_services{
+.our_services {
     background-position: center;
     text-align: center;
-    margin-left: 60px;
-    margin-right: 60px;
-    margin-top: 50px;
-    
+    margin: 50px 60px;
 }
-.our_services .all_service{
+
+.all_service {
     display: flex;
     margin: 40px;
-    width: 1005;
     justify-content: space-evenly;
 }
-.all_service span{
+
+.all_service span {
     background-color: #356480;
-    padding: 20px 30px 20px 30px;
+    padding: 20px 30px;
     border-radius: 15px;
     color: white;
     text-align: center;
-    
+    position: relative;
+    min-width: 300px;
 }
-.all_service span h3,h4{
+
+.all_service span h3,
+.all_service span h4 {
     margin-bottom: 20px;
 }
 
-.all_service span ul li{
+.all_service span ul li {
     margin-bottom: 10px;
     font-size: small;
+}
 
-}
-.all_service span #carrt{
+.price-btn {
     margin-top: 30px;
-    padding: 5px 30px 5px 30px;
+    padding: 5px 30px;
     font-weight: bold;
+    background-color: #fff;
+    color: #356480;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
 .package{
     margin-left: 30px;
     margin-top: 50px;
@@ -443,5 +471,181 @@ form button{
 }
 
 /* Now I want to do tranfomation and trinsition of the website*/
+
+.new{
+    position: relative;  
+    height: 450px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    margin-bottom: 50px;
+   
+  }
+  
+  .swiper{
+    width: 950px;
+  }
+  
+  .card{
+    position: relative;
+    background: #fff;
+    border-radius: 20px;
+    height: 400px;
+    margin: 20px 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card::before{
+    content: "";
+    position: absolute;
+    height: 40%;
+    width: 100%;
+    background: white;
+    border-radius: 20px 20px 0 0;
+  }
+  
+  .card .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    position: relative;
+    z-index: 100;
+  }
+  
+  .new .card .image{
+    height: 140px;
+    width: 140px;
+    border-radius: 20%;
+    padding: 3px;
+    background: #332e3b;
+    margin-top: 30px;
+  }
+  
+  .new .card .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20%;
+    border: 3px solid #fff;
+  }
+  
+  .card .media-icons{
+    position: absolute;
+    top: 12px;
+    right: 95px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .card .media-icons i{
+    color: #1e1d1f;
+    opacity: 0.6;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin: 10px;
+  }
+  
+  .card .media-icons i:hover{
+    opacity: 1;
+  }
+  
+  .card .name-profession{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    color: black;
+  } 
+  
+  .name-profession .name{
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .name-profession .profession{
+    font-size:15px;
+    font-weight: 500;
+  }
+  
+  .card .rating{
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+  }
+  
+  .card .rating i{
+    font-size: 18px;
+    margin: 0 2px;
+    color: #0a090a;
+  }
+  
+  .card .button{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .card .button button{
+    background: #024A5E;
+    outline: none;
+    border: none;
+    color: #fff;
+    padding: 8px 22px;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .button button:hover{
+    background: #024A5E;
+  }
+  
+  .swiper-pagination{
+    position: absolute;
+    top: 450px;
+  }
+  
+  .swiper-pagination-bullet{
+    height: 7px;
+    width: 26px;
+    border-radius: 25px;
+    background: white;
+  }
+  
+  .swiper-button-next, .swiper-button-prev{
+    opacity: 0.7;
+    color: white;
+    transition: all 0.3s ease;
+  }
+  .swiper-button-next:hover, .swiper-button-prev:hover{
+    opacity: 1;
+    color: white;
+  }
+  .login{
+    align-self: center;
+    gap: 10px;
+    background-color: #024A5E;
+    padding: 5px 15px 5px 15px;
+    border-style: groove;
+    border-radius: 20px;
+    border-color: #0a090a;
+    margin-left: 20px;
+    display: block;
+  }
+  .login a{
+    text-decoration: none;
+    color: black;
+    font: bold;
+  }
+  .login:hover a{
+    color: #fff;
+  }
+  
 
 
