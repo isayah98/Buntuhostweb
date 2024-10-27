@@ -40,6 +40,30 @@ header{
     margin-left: 20px;
    
 }
+
+header .iconCart{
+    position: relative;
+    z-index: 1;
+}
+
+header .totalQuantity{
+    position: absolute;
+    top: 22px;
+    right: 4px;
+    font-size: x-large;
+    background-color: rgb(29, 26, 26);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(20px);
+    color: #fff;
+
+}
+
 nav ul{
     display: flex;
     list-style-type: none;
@@ -365,15 +389,23 @@ footer{
 .package p{
     padding-left: 20px;
 }
+
+.package-list li{
+    margin-left: 30px;
+    color: #0a1e3b;
+}
+
 .package #interested{
     background-color: #024A5E;
     font-weight: bold;
     padding: 5px 15px 5px 15px;
     border-radius: 15px;
 }
+
 .media{
     display: flex;
     margin-left: 30px;
+
 }
 .media .all{
     background: linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20)), url(./assets/p1.webp);
