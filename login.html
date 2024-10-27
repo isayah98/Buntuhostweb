@@ -8,6 +8,14 @@
     <title>Login/Signup</title>
 
     <style>
+      
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+      }
+
         body{
     display: flex;
     justify-content: center;
@@ -16,6 +24,7 @@
     background: #081b29;
 
   }
+
   .wrapper{
     position: relative;
     width: 750px;
@@ -25,6 +34,7 @@
     overflow: hidden;
     box-shadow: 0 0 25px #0ef;
   }
+
   .wrapper .form-box{
     position: absolute;
     top: 0;
@@ -34,21 +44,67 @@
     flex-direction: column;
     justify-content: center;
   }
+
   .wrapper .form-box.login{
     left: 0;
     padding: 0 60px 0 40px;
+    
   }
+
+  .wrapper .form-box.login .animation{
+    transform: translateX(0);
+    opacity: 1;
+    filter: blur(0);
+    transition: .7s ease;
+    transition-delay: calc(.1s * var(--j));
+  }
+
+  .wrapper.active .form-box.login .animation{
+    transform: translateX(-120%);
+    opacity: 0;
+    filter: blur(10px);
+    transition-delay: calc(.1s * var(--i));
+  }
+
+  .wrapper .form-box.register{
+    right: 0;
+    padding: 0 40px 0 60px;
+    pointer-events: none;
+    
+  }
+
+  .wrapper.active .form-box.register{
+    pointer-events: auto;
+  }
+
+  .wrapper .form-box.register .animation{
+    transform: translateX(120%);
+    opacity: 0;
+    filter: blur(10px);
+    transition: .7s ease;
+    transition-delay: calc(.1s * var(--j));
+  }
+
+  .wrapper.active .form-box.register .animation{
+    transform: translateX(0);
+    opacity: 1;
+    filter: blur(0);
+    transition-delay: calc(.1s * var(--i));
+  }
+
   .form-box h2{
     font-size: 32px;
     color: #fff;
     text-align: center;
   }
+
   .form-box .input-box{
     position: relative;
     width: 100%;
     height: 50px;
     margin: 25px 0;
   }
+
   .input-box input{
     width: 100%;
     height: 100%;
@@ -62,6 +118,7 @@
     transition: .5s;
     padding-right: 20px;
   }
+
   .input-box input:focus,
   .input-box input:valid{
     border-bottom-color: #0ef;
@@ -93,6 +150,7 @@
     color: #fff;
     transition: .5s;
   }
+
   .input-box input:focus~i,
   .input-box input:valid~i{
     color: #0ef;
@@ -136,11 +194,13 @@
     text-align: center;
     margin: 20px 0 10px;
   }
+
   .logreg-link p a{
     color: #0ef;
     text-decoration: none;
     font-weight: 600;
   }
+
   .logreg-link p a:hover{
     text-decoration: underline;
   }
@@ -161,6 +221,50 @@
     padding: 0 40px 60px 150px;
 
   }
+
+  .wrapper .info-text.login .animation{
+    transform: translateX(0);
+    opacity: 1;
+    filter: blur(0);
+    transition: .7s ease;
+    transition-delay: calc(.1s * var(--j));
+  }
+
+  .wrapper.active .info-text.login .animation{
+    transform: translateX(120%);
+    opacity: 0;
+    filter: blur(10px);
+    transition-delay: calc(.1s * var(--i));
+  }
+
+
+  .wrapper .info-text.register{
+    left: 0;
+    text-align: left;
+    padding: 0 150px 60px 40px;
+    pointer-events: none;
+
+  }
+
+  .wrapper.active .info-text.register{
+    pointer-events: auto;
+  }
+
+  .wrapper .info-text.register .animation{
+    transform: translateX(-120%);
+    opacity: 0;
+    filter: blur(10px);
+    transition: .7s ease;
+    transition-delay: calc(.1s * var(--j));
+  }
+
+  .wrapper.active .info-text.register .animation{
+    transform: translateX(0);
+    opacity: 1;
+    filter: blur(0);
+    transition-delay: calc(.1s * var(--i));
+  }
+
   .info-text h2{
     font-size: 36px;
     color: #fff;
@@ -183,6 +287,32 @@
     transform: rotate(10deg) skewY(40deg);
     transform-origin: bottom right;
     border-bottom: 3px solid #0ef;
+    transition: 1.5s ease;
+    transition-delay: 1.6s;
+  }
+
+  .wrapper.active .bg-animate{
+    transform: rotate(0) skewY(0);
+    transition-delay: .5s;
+  }
+
+  .wrapper .bg-animate2{
+    position: absolute;
+    top: 100%;
+    left: 250px;
+    width: 850px;
+    height: 700px;
+    background: #081b29;
+    transform: rotate(0) skewY(0);
+    transform-origin: bottom left;
+    border-bottom: 3px solid #0ef;
+    transition: 1.5s ease;
+    transition-delay: .5s;
+  }
+
+  .wrapper.active .bg-animate2{
+    transform: rotate(-11deg) skewY(-41deg);
+    transition-delay: 1.2s;
   }
 
   .return{
@@ -191,7 +321,9 @@
     background: #0ef;
     color: #fff;
     border-radius: 20px;
+    box-shadow: 0 0 10px #0ef;
   }
+
   .return a{
     text-decoration: none;
     font-size: 16px;
@@ -199,48 +331,106 @@
     color: #081b29;
     font-weight: 500;
   }
-  .return:hover{
+
+  .return:hover {
     padding: 20px;
     background: rgb(32, 81, 85);
   }
+ .return a:hover{
+  color: white;
+ }
     
     </style>
+
 </head>
+
 <body>
     
     
 
         <div class="wrapper">
+
             <span class="bg-animate"></span>
+            <span class="bg-animate2"></span>
+
             <div class="form-box login">
-                <h2>Login</h2>
+                <h2 class="animation" style="--i:0; --j:21;">Login</h2>
                 <form action="#">
-                    <div class="input-box">
+                    <div class="input-box animation" style="--i:1; --j:22;">
                         <input type="text" required>
                         <label>Username</label>
                         <i class='bx bxs-user'></i>
                     </div>
     
-                    <div class="input-box">
+                    <div class="input-box animation" style="--i:2; --j:23;">
                         <input type="password" required>
                         <label>Password</label>
                         <i class='bx bxs-lock-alt' ></i>
                     </div>
     
-                    <button type="submit" class="btn">Login</button>
+                    <button type="submit" class="btn animation" style="--i:3; --j:24;">Login</button>
     
-                    <div class="logreg-link">
-                        <p>Don`t have an account? <a href="" class="register-link">Sign Up</a></p>
+                    <div class="logreg-link animation" style="--i:4; --j:25;">
+                        <p>Don`t have an account? <a href="#" class="register-link">Sign Up</a></p>
                     </div>
                 </form>
             </div>
             <div class="info-text login">
-                <h2>Welcome Back</h2>
-                <p>please sign in on your<br/>
+                <h2 class="animation" style="--i:0; --j:20;">Welcome Back</h2>
+                <p class="animation" style="--i:1; --j:21;">please sign in on your<br/>
                     account or signup .</p>
             </div>
+
+            <div class="form-box register">
+              <h2 class="animation" style="--i:17; --j:0;">Sign Up</h2>
+              <form action="#">
+                  <div class="input-box animation" style="--i:18; --j:1;">
+                      <input type="text" required>
+                      <label>Username</label>
+                      <i class='bx bxs-user'></i>
+                  </div>
+
+                  <div class="input-box animation" style="--i:19; --j:2;">
+                    <input type="email" required>
+                    <label>Email</label>
+                    <i class='bx bxs-envelope'></i>
+                </div>
+  
+                  <div class="input-box animation" style="--i:20; --j:3;">
+                      <input type="password" required>
+                      <label>Password</label>
+                      <i class='bx bxs-lock-alt' ></i>
+                  </div>
+  
+                  <button type="submit" class="btn animation" style="--i:21; --j:4;">Sign Up</button>
+  
+                  <div class="logreg-link animation" style="--i:22; --j:5;">
+                      <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                  </div>
+              </form>
+          </div>
+
+          <div class="info-text register">
+            <h2 class="animation" style="--i:17; --j:0;">Welcome Back</h2>
+            <p class="animation" style="--i:18; --j:1;">please sign in on your<br/>
+                account or signup .</p>
+        </div>
+
         </div>
     <button type="button" class="return"><a href="index.html">Return Home</a></button>
 
+    <script>
+      const wrapper = document.querySelector('.wrapper');
+      const registerLink = document.querySelector('.register-link');
+      const loginLink = document.querySelector('.login-link');
+
+      registerLink.onclick = () => {
+        wrapper.classList.add('active');
+      }
+
+      loginLink.onclick = () => {
+        wrapper.classList.remove('active');
+      }
+    </script>
 </body>
 </html>
