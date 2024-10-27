@@ -237,6 +237,9 @@ header .logoB{
 .offers h2{
     margin-bottom: 20px;
     position: relative;
+    /*display: inline-block;
+    /*padding-bottom: 4px;
+    border-bottom: 2px;*/
 }
 .offers p{
     margin-bottom: 15px;
@@ -266,6 +269,10 @@ header .logoB{
     background-color: #D9D9D9;
     padding: 5px 20px 5px 20px;
     border-radius: 20px;
+}
+#afford a{
+    text-decoration: none;
+    color: black;
 }
 footer{
     padding: 30px;
@@ -325,7 +332,7 @@ footer{
     position: absolute;
     top: 90%;
     transform: translateY(-50%);
-    background: black;
+    background: rgb(31, 30, 30);
     padding: 4px;
     border-radius: 100%;
     border: none;
@@ -630,17 +637,17 @@ form button{
     height: 7px;
     width: 26px;
     border-radius: 25px;
-    background: white;
+    background: rgb(47, 43, 43);
   }
   
   .swiper-button-next, .swiper-button-prev{
     opacity: 0.7;
-    color: white;
+    color: rgb(22, 20, 20);
     transition: all 0.3s ease;
   }
   .swiper-button-next:hover, .swiper-button-prev:hover{
     opacity: 1;
-    color: white;
+    color: rgb(25, 23, 23);
   }
   .login{
     align-self: center;

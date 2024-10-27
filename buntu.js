@@ -34,30 +34,34 @@ const servicesInfom = {
         {
             title: "Small businesses",
             features: [
-                "Reliable hosting with 99.9% Uptime \nto keep your website accessible",
-                "SSL certificate for secure online \ntransactions",
-                "Daily backups and automatic updates to \nensure your data is safe.",
-                "Scalable plans to grow as your business \nexpands."
+                
+                document.getElementById('list1').innerHTML = "Reliable hosting with 99.9% Uptime <br/> to keep your website accessible",
+                document.getElementById('list2').innerHTML ="SSL certificate for secure online <br/>transactions",
+                document.getElementById('list3').innerHTML ="Daily backups and automatic updates to <br/>ensure your data is safe.",
+                document.getElementById('list4').innerHTML ="Scalable plans to grow as your business <br/>expands."
             ],
             price: "R349/pm"
         },
         {
             title: "Individuals",
             features: [
-                "Personal website hosting",
-                "Custom email addresses",
-                "99.9% uptime guarantee",
-                "Basic support"
+                document.getElementById('list1').innerHTML = "Affordable hosting plans for personal <br/>projects or blogs.",
+                document.getElementById('list2').innerHTML = "Easy-to-use control panel for <br/>managing your website.",
+                document.getElementById('list3').innerHTML = "24/7 support to assist with any <br/>technical issues.",
+                document.getElementById('list4').innerHTML = "Free domain name registration for the <br/>first year."
+            
             ],
             price: "R199/pm"
         },
         {
             title: "Developers",
             features: [
-                "Developer-friendly tools",
-                "Git integration",
-                "Staging environments",
-                "99.9% Uptime"
+                document.getElementById('list1').innerHTML = "Flexible hosting environments with <br/>SSH access for custom configurations.",
+                document.getElementById('list2').innerHTML = "Support for various programming languages <br/>(e.g., PHP, Python, Node.js).",
+                document.getElementById('list3').innerHTML = "Git integration for seamless version <br/>control and deployment.",
+                document.getElementById('list4').innerHTML = "Staging environments for testing changes <br/>before going live."
+            
+            
             ],
             price: "R499/pm"
         }
@@ -66,30 +70,36 @@ const servicesInfom = {
         {
             title: "Small businesses",
             features: [
-                "Custom website development",
-                "Mobile-friendly design",
-                "SEO optimization",
-                "Content management system"
+                document.getElementById('list5').innerHTML = "Custom website development tailored <br/>to your business needs.",
+                document.getElementById('list6').innerHTML = "E-commerce solutions for online stores <br/>(shopping carts, payment gateways).",
+                document.getElementById('list7').innerHTML = "Integration with third-party <br/>services (CRM, marketing tools).",
+                document.getElementById('list8').innerHTML = "Performance optimization for faster loading <br/>times."
+            
+            
             ],
             price: "R10000"
         },
         {
             title: "Individuals",
             features: [
-                "Personal portfolio site",
-                "Blog development",
-                "SEO optimization",
-                "Social media integration"
+                document.getElementById('list5').innerHTML = "Personal websites or portfolio <br/>development to showcase your work.",
+                document.getElementById('list6').innerHTML = "Blog creation with content management <br/>systems (e.g., WordPress).",
+                document.getElementById('list7').innerHTML = "One-page sites for events, hobbies, <br/>or small projects.",
+                document.getElementById('list8').innerHTML = "SEO-friendly development to improve search <br/>engine visibility."
+            
+            
             ],
             price: "R5000"
         },
         {
             title: "Developers",
             features: [
-                "Custom API integration",
-                "Web app development",
-                "Code reviews",
-                "Performance optimization"
+                document.getElementById('list5').innerHTML = "Collaboration on complex web projects <br/>(APIs, web apps).",
+                document.getElementById('list6').innerHTML = "Custom scripts and functionalities <br/>based on project requirements.",
+                document.getElementById('list7').innerHTML = "Development tools integration <br/>(code editors, project management).",
+                document.getElementById('list8').innerHTML = "Backend and frontend development <br/>support."
+            
+            
             ],
             price: "R15000"
         }
@@ -98,30 +108,36 @@ const servicesInfom = {
         {
             title: "Small businesses",
             features: [
-                "Professional web design",
-                "Responsive layouts",
-                "UI/UX optimization",
-                "Graphic design integration"
+                document.getElementById('list9').innerHTML = "Professional designs that reflect <br/>your brand identity.",
+                document.getElementById('list10').innerHTML = "Mobile-responsive layouts for optimal<br/> viewing on all devices.",
+                document.getElementById('list11').innerHTML = "User experience (UX) enhancements <br/>for higher customer satisfaction.",
+                document.getElementById('list12').innerHTML = "Design consistency across marketing<br/> materials (logos, flyers, etc.)."
+            
+            
             ],
             price: "R1500"
         },
         {
             title: "Individuals",
             features: [
-                "Personalized design",
-                "Basic graphic design",
-                "Responsive layout",
-                "Social media graphics"
+                document.getElementById('list9').innerHTML = "Personalized designs for blogs, portfolios, <br/>or personal projects.",
+                document.getElementById('list10').innerHTML = "User interface (UI) designs that <br/>are easy to navigate.",
+                document.getElementById('list11').innerHTML = "Creative graphic design services for <br/>custom illustrations or artwork.",
+                document.getElementById('list12').innerHTML = "Templates for personal use, adaptable <br/>to different content."
+            
+            
             ],
             price: "R800"
         },
         {
             title: "Developers",
             features: [
-                "UI/UX consulting",
-                "Design for web applications",
-                "Design system creation",
-                "User journey mapping"
+                document.getElementById('list9').innerHTML = "Wireframing and prototyping for <br/>quick design iterations.",
+                document.getElementById('list10').innerHTML = "Custom UI kits and components for <br/>development projects.",
+                document.getElementById('list11').innerHTML = "Design system creation for <br/>consistent styling across applications.",
+                document.getElementById('list12').innerHTML = "Collaboration on user testing and <br/>feedback integration."
+            
+            
             ],
             price: "R2500"
         }
