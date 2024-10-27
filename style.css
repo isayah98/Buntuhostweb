@@ -17,6 +17,14 @@ header{
     padding-right: 30px;
     align-content: center;
     justify-content: space-evenly;
+    transition: background-color 0.3s ease;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+}
+
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.5); /* More transparent when scrolled */
 }
 
 .logo_buntu{
@@ -147,7 +155,7 @@ header .logoB{
     justify-content: space-between;
     color: white;
     border-radius: 5px;
-    margin-top: 15px;
+    margin-top: 150px;
 }
 .help{
     background-color: #6C8FC3;
