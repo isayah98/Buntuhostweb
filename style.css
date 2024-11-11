@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+
 *{
     margin: 0;
     padding: 0;
@@ -50,7 +51,7 @@ header .totalQuantity{
     position: absolute;
     top: 22px;
     right: 4px;
-    font-size: x-large;
+    font-size: large;
     background-color: rgb(29, 26, 26);
     width: 25px;
     height: 25px;
@@ -204,6 +205,23 @@ header .logoB{
     overflow: hidden;
     height: 300px;
     width: 95%;
+
+}
+.services_info::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background-color: currentColor;
+    transform: scaleX(0.2);
+    transform-origin: left;
+    transform: transition 250ms ease-in;
+}
+.services_info:hover::after{
+    transform: scaleX(1);
+    transform-origin: top;
 }
 .service{
     position: absolute;
@@ -326,6 +344,7 @@ footer{
     position: relative;
     min-width: 300px;
 }
+
 .all_service:hover .arrow{
     display: block;
   
@@ -475,7 +494,7 @@ footer{
 .contact_us{
     display: flex;
     margin: 40px;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .location p, .content p{
     color: #918E8E;
@@ -509,10 +528,12 @@ input, select{
     color: red;
 }
 textarea{
-    padding: 60px;
+    padding: 15px;
     border: 2px solid #ccc;
     border-radius: 20px;
     background-color: #ccc;
+    width: 500px;
+    height: 300px;
 }
 form button{
     background-color: #024A5E;
@@ -700,6 +721,11 @@ form button{
   .login:hover a{
     color: #fff;
   }
+}
+
+  
+
+  
   
 
 
